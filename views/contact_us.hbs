@@ -2,22 +2,37 @@
     <html>  
         <head>
             <meta chahrset="utf-8">
+            <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/css/bootstrap.min.css">
+            <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+            <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/js/bootstrap.min.js"></script>
             <title> BMI CALCULATOR </title>
         </head>
         <body>
-            <h1> BMI CALCULATOR</h1>
+            <h1><center>BMI CALCULATOR</center> </h1>
             <form action='http://localhost:3000/process-contacts' method="POST">
-               
-                First name:
-                <input type="text" name="first_name"/>
-                Last Name:
-                <input type="text" name="last_name" /> <br>
-                Weight:
-                <input type="text" name="weight"/> 
-                 Height(meters):
-                <input type="text" name="height" />
-                <input type="submit" value="Submit"/>
+                   
+              
+    <div class ="jumbotron">
+  <table class="table table-bordered">
+     
+    <thead>
+      <tr> <center>
+        <th>weight</th>
+        <th> Height</th></center>
+      </tr>
+    </thead>
+    <tbody>
+      <tr><center>
+        <td><input type="text" name="weight"/> </td>
+        <td><input type="text" name="height" /></td></center>
+      </tr>
+    </tbody>
+    
+  </table>
 
+ <center><input type="submit" class="btn btn-danger" value="Submit"></center>
+ 
+</div></div>
                 
             </form> 
         </body>
