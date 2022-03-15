@@ -20,7 +20,7 @@ app.post('/process-contacts', urlEncodedParser, function(req, resp) {
     var BMI = myweight / (myheight * myheight);
 
     if (BMI < 18.5) {
-        resp.end('Thanks ' + req.body.first_name + ' ' +
+        resp.end('Thanks, ' + req.body.first_name + ' ' +
             req.body.last_name + '\n' +
             ' your weight is:' + req.body.weight +
             ' and your height is:' + req.body.height +
