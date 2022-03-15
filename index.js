@@ -52,4 +52,4 @@ app.post('/process-contacts', urlEncodedParser, function(req, resp) {
 });
 
 app.listen(port);
-console.log('Console listening on port ${port}');
+console.log(`Console listening on port ${port}`);
