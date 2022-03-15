@@ -1,6 +1,6 @@
 var express = require('express');
 var app = express();
-var port = 3000;
+var port = process.env.PORT;
 const bodyParser = require('body-parser');
 const urlEncodedParser = bodyParser.urlencoded({ extended: false });
 
@@ -52,4 +52,4 @@ app.post('/process-contacts', urlEncodedParser, function(req, resp) {
 });
 
 app.listen(port);
-console.log("Console listening on port 3000");
+console.log('Console listening on port ${port}');
