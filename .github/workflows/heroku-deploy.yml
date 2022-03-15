@@ -27,8 +27,8 @@ jobs:
       - uses: akhileshns/heroku-deploy@v3.12.12
         with:
           heroku_api_key : ${{secrets.HEROKU_API_KEY}}
-          heroku_app_name : "bodymassindex-app"
-          heroku_email  : "hiltonbfelix98@gmail.com"
+          heroku_app_name : bodymassindex-app
+          heroku_email  : hiltonbfelix98@gmail.com
           
 #     # Runs a single command using the runners shell
 #       - name: Run a one-line script
