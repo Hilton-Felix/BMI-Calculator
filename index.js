@@ -24,7 +24,7 @@ app.post('/process-contacts', urlEncodedParser, function(req, resp) {
             req.body.last_name + '\n' +
             ' your weight is:' + req.body.weight +
             ' and your height is:' + req.body.height +
-            '\n' + 'Your BMI is ' + BMI +
+            '\n' + 'Your BMI is: ' + BMI +
             '\n' + 'you are underweight...');
     } else if (BMI >= 18.5 && BMI <= 24.9) {
         resp.end('Thanks ' + req.body.first_name + ' ' +
